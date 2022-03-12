@@ -2,6 +2,6 @@
 
  its the project for test serial communication sequence platform
  
- not work the all,its lack of the ui and the ui.h and .pro
- 
+ not work the all,its lack of the ui and the ui.h and .pro,i will  complement it in the week
+
  code plat is the QT 5.9
