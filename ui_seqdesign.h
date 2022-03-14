@@ -1,13 +1,13 @@
 /********************************************************************************
-** Form generated from reading UI file 'scdesign.ui'
+** Form generated from reading UI file 'seqdesign.ui'
 **
 ** Created by: Qt User Interface Compiler version 5.9.9
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
 
-#ifndef UI_SCDESIGN_H
-#define UI_SCDESIGN_H
+#ifndef UI_SEQDESIGN_H
+#define UI_SEQDESIGN_H
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QAction>
@@ -23,116 +23,132 @@
 
 QT_BEGIN_NAMESPACE
 
-class Ui_SCdesign
+class Ui_seqdesign
 {
 public:
     QGridLayout *gridLayout;
-    QLineEdit *cutup;
-    QLabel *title;
-    QListWidget *listWidget;
-    QLabel *SeqPathlab;
-    QLineEdit *SeqPath;
-    QPushButton *OpenPath;
-    QLabel *label;
-    QLabel *label_2;
-    QLineEdit *cutdown;
-    QPushButton *decide;
+    QPushButton *upbtn;
+    QPushButton *downbtn;
+    QPushButton *intoseq;
+    QPushButton *outseq;
+    QLabel *openlab;
+    QListWidget *outputorder;
+    QPushButton *openbtn;
+    QPushButton *SaveButton;
+    QLabel *SavePathlab;
+    QLineEdit *SavePath;
+    QLineEdit *openline;
+    QListWidget *inputorder;
 
-    void setupUi(QWidget *SCdesign)
+    void setupUi(QWidget *seqdesign)
     {
-        if (SCdesign->objectName().isEmpty())
-            SCdesign->setObjectName(QStringLiteral("SCdesign"));
-        SCdesign->resize(738, 400);
-        gridLayout = new QGridLayout(SCdesign);
+        if (seqdesign->objectName().isEmpty())
+            seqdesign->setObjectName(QStringLiteral("seqdesign"));
+        seqdesign->resize(774, 601);
+        gridLayout = new QGridLayout(seqdesign);
         gridLayout->setObjectName(QStringLiteral("gridLayout"));
-        cutup = new QLineEdit(SCdesign);
-        cutup->setObjectName(QStringLiteral("cutup"));
+        upbtn = new QPushButton(seqdesign);
+        upbtn->setObjectName(QStringLiteral("upbtn"));
 
-        gridLayout->addWidget(cutup, 3, 1, 1, 1);
+        gridLayout->addWidget(upbtn, 3, 2, 1, 1);
 
-        title = new QLabel(SCdesign);
-        title->setObjectName(QStringLiteral("title"));
-        QFont font;
-        font.setFamily(QStringLiteral("Arial"));
-        font.setPointSize(16);
-        font.setBold(true);
-        font.setWeight(75);
-        title->setFont(font);
-        title->setAlignment(Qt::AlignCenter);
+        downbtn = new QPushButton(seqdesign);
+        downbtn->setObjectName(QStringLiteral("downbtn"));
 
-        gridLayout->addWidget(title, 1, 1, 1, 1);
+        gridLayout->addWidget(downbtn, 4, 2, 1, 1);
 
-        listWidget = new QListWidget(SCdesign);
-        listWidget->setObjectName(QStringLiteral("listWidget"));
+        intoseq = new QPushButton(seqdesign);
+        intoseq->setObjectName(QStringLiteral("intoseq"));
 
-        gridLayout->addWidget(listWidget, 5, 0, 1, 3);
+        gridLayout->addWidget(intoseq, 1, 2, 1, 1);
 
-        SeqPathlab = new QLabel(SCdesign);
-        SeqPathlab->setObjectName(QStringLiteral("SeqPathlab"));
-        QFont font1;
-        font1.setFamily(QStringLiteral("Arial"));
-        font1.setPointSize(10);
-        font1.setBold(true);
-        font1.setWeight(75);
-        SeqPathlab->setFont(font1);
+        outseq = new QPushButton(seqdesign);
+        outseq->setObjectName(QStringLiteral("outseq"));
 
-        gridLayout->addWidget(SeqPathlab, 2, 0, 1, 1);
+        gridLayout->addWidget(outseq, 2, 2, 1, 1);
 
-        SeqPath = new QLineEdit(SCdesign);
-        SeqPath->setObjectName(QStringLiteral("SeqPath"));
+        openlab = new QLabel(seqdesign);
+        openlab->setObjectName(QStringLiteral("openlab"));
 
-        gridLayout->addWidget(SeqPath, 2, 1, 1, 1);
+        gridLayout->addWidget(openlab, 6, 0, 1, 1);
 
-        OpenPath = new QPushButton(SCdesign);
-        OpenPath->setObjectName(QStringLiteral("OpenPath"));
+        outputorder = new QListWidget(seqdesign);
+        outputorder->setObjectName(QStringLiteral("outputorder"));
 
-        gridLayout->addWidget(OpenPath, 2, 2, 1, 1);
+        gridLayout->addWidget(outputorder, 0, 3, 5, 2);
 
-        label = new QLabel(SCdesign);
-        label->setObjectName(QStringLiteral("label"));
-        label->setFont(font1);
+        openbtn = new QPushButton(seqdesign);
+        openbtn->setObjectName(QStringLiteral("openbtn"));
 
-        gridLayout->addWidget(label, 3, 0, 1, 1);
+        gridLayout->addWidget(openbtn, 6, 4, 1, 1);
 
-        label_2 = new QLabel(SCdesign);
-        label_2->setObjectName(QStringLiteral("label_2"));
-        label_2->setFont(font1);
+        SaveButton = new QPushButton(seqdesign);
+        SaveButton->setObjectName(QStringLiteral("SaveButton"));
 
-        gridLayout->addWidget(label_2, 4, 0, 1, 1);
+        gridLayout->addWidget(SaveButton, 5, 4, 1, 1);
 
-        cutdown = new QLineEdit(SCdesign);
-        cutdown->setObjectName(QStringLiteral("cutdown"));
+        SavePathlab = new QLabel(seqdesign);
+        SavePathlab->setObjectName(QStringLiteral("SavePathlab"));
 
-        gridLayout->addWidget(cutdown, 4, 1, 1, 1);
+        gridLayout->addWidget(SavePathlab, 5, 0, 1, 1);
 
-        decide = new QPushButton(SCdesign);
-        decide->setObjectName(QStringLiteral("decide"));
+        SavePath = new QLineEdit(seqdesign);
+        SavePath->setObjectName(QStringLiteral("SavePath"));
 
-        gridLayout->addWidget(decide, 4, 2, 1, 1);
+        gridLayout->addWidget(SavePath, 5, 1, 1, 3);
+
+        openline = new QLineEdit(seqdesign);
+        openline->setObjectName(QStringLiteral("openline"));
+
+        gridLayout->addWidget(openline, 6, 1, 1, 3);
+
+        inputorder = new QListWidget(seqdesign);
+        new QListWidgetItem(inputorder);
+        new QListWidgetItem(inputorder);
+        new QListWidgetItem(inputorder);
+        new QListWidgetItem(inputorder);
+        inputorder->setObjectName(QStringLiteral("inputorder"));
+
+        gridLayout->addWidget(inputorder, 0, 0, 5, 2);
 
 
-        retranslateUi(SCdesign);
+        retranslateUi(seqdesign);
 
-        QMetaObject::connectSlotsByName(SCdesign);
+        QMetaObject::connectSlotsByName(seqdesign);
     } // setupUi
 
-    void retranslateUi(QWidget *SCdesign)
+    void retranslateUi(QWidget *seqdesign)
     {
-        SCdesign->setWindowTitle(QApplication::translate("SCdesign", "Form", Q_NULLPTR));
-        title->setText(QApplication::translate("SCdesign", "SoundCheck 12.0 Control view", Q_NULLPTR));
-        SeqPathlab->setText(QApplication::translate("SCdesign", "Open Sequence Path", Q_NULLPTR));
-        OpenPath->setText(QApplication::translate("SCdesign", "Open", Q_NULLPTR));
-        label->setText(QApplication::translate("SCdesign", "Cutup", Q_NULLPTR));
-        label_2->setText(QApplication::translate("SCdesign", "Cutdown", Q_NULLPTR));
-        decide->setText(QApplication::translate("SCdesign", "OK", Q_NULLPTR));
+        seqdesign->setWindowTitle(QApplication::translate("seqdesign", "Form", Q_NULLPTR));
+        upbtn->setText(QApplication::translate("seqdesign", "up", Q_NULLPTR));
+        downbtn->setText(QApplication::translate("seqdesign", "down", Q_NULLPTR));
+        intoseq->setText(QApplication::translate("seqdesign", "into", Q_NULLPTR));
+        outseq->setText(QApplication::translate("seqdesign", "out", Q_NULLPTR));
+        openlab->setText(QApplication::translate("seqdesign", "Openpath", Q_NULLPTR));
+        openbtn->setText(QApplication::translate("seqdesign", "open", Q_NULLPTR));
+        SaveButton->setText(QApplication::translate("seqdesign", "Save", Q_NULLPTR));
+        SavePathlab->setText(QApplication::translate("seqdesign", "SavePath", Q_NULLPTR));
+
+        const bool __sortingEnabled = inputorder->isSortingEnabled();
+        inputorder->setSortingEnabled(false);
+        QListWidgetItem *___qlistwidgetitem = inputorder->item(0);
+        ___qlistwidgetitem->setText(QApplication::translate("seqdesign", "SC-operate", Q_NULLPTR));
+        QListWidgetItem *___qlistwidgetitem1 = inputorder->item(1);
+        ___qlistwidgetitem1->setText(QApplication::translate("seqdesign", "USB-operate", Q_NULLPTR));
+        QListWidgetItem *___qlistwidgetitem2 = inputorder->item(2);
+        ___qlistwidgetitem2->setText(QApplication::translate("seqdesign", "RS232-operate", Q_NULLPTR));
+        QListWidgetItem *___qlistwidgetitem3 = inputorder->item(3);
+        ___qlistwidgetitem3->setText(QApplication::translate("seqdesign", "GPIB-operate", Q_NULLPTR));
+        inputorder->setSortingEnabled(__sortingEnabled);
+
     } // retranslateUi
 
 };
 
 namespace Ui {
-    class SCdesign: public Ui_SCdesign {};
+    class seqdesign: public Ui_seqdesign {};
 } // namespace Ui
 
 QT_END_NAMESPACE
 
-#endif // UI_SCDESIGN_H
+#endif // UI_SEQDESIGN_H
