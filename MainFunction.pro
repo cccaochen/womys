@@ -64,8 +64,3 @@ RESOURCES += \
 
 LIBS += -lD:\information\dllfile\ClassLibrary3
 LIBS += -lD:\information\dllfile\ClassLibrary4
-
-DISTFILES += \
-    pic.rc
-
-RC_FILE += pic.rc
